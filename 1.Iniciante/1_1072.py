@@ -14,25 +14,8 @@ for v in range(len(lista)):
     else:
         lista_out.append(lista[v])
 
-for c in range(len(lista_in)):
-        c += 1
-        lista_in.append(c)
-        del lista_in[c-1]
-        lista_in.append(c)
-        del lista_in[c-1]
+qnt_in = len(lista_in)
+qnt_out = len(lista_out)
 
-lista_in.sort()
-lista_in.reverse()
-
-for c in range(len(lista_out)):
-        c += 1
-        lista_out.append(c)
-        del lista_out[c-1]
-        lista_out.append(c)
-        del lista_out[c-1]
-
-lista_out.sort()
-lista_out.reverse()
-
-print("{} in".format(lista_in[0]))
-print("{} out".format(lista_out[0]))
+print("{} in".format(qnt_in))
+print("{} out".format(qnt_out))
